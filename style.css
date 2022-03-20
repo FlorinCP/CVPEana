@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html /* aici se aplica setarile de baza pt document */
+{
+   color: #333;
+   font-family: "Josefin Sans";
+   line-height: 1.5;
+}
+
+body{ 
+    /* setariile pt body .. nimic special de zis  */
+    padding: 2rem 2.5rem;
+    background: linear-gradient(#dfe0db, #dfe0db 50%, #fcebe1 50%, #fcebe1);
+}
+
+ /* aplic setarile pt toate tipurile de header , de la h1 la cat oi fi ajunge  */
+
+h1{ 
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+h2
+{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-top:  1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 0.75rem 0;
+    margin-bottom: 2rem;
+}
+h3{
+    color :salmon;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* rarefiez putin sectiunile */
+
+section+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+a{
+    /* ma scap de albastrul ala urat  */
+    text-decoration: none; 
+    color: inherit;
+}
+
+.profile img{
+    /* face imaginea rotunda si ii modificam dimensiunile */
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;   
+}
+.profile{
+    text-align: center;
+}
+
+.profile p{
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 1.25rem;
+}
+
+.contact ul{  /*inghesuie putin */
+    margin-top: -2rem;
+}
+
+.contact li{
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: 1px solid #888;
+    color: #222;
+    font-size: 0.75rem;
+}
+
+.skills > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem ;
+}
+
+.timeline .event + .event{
+  padding-top: 1rem;
+}
+
+.timeline .event{
+display: grid;
+grid-template-columns: 5ch 1fr;
+}
+
+.timeline .content{
+   padding-left: 1rem;
+   border-left: #888 1px solid;
+   margin-left: 1rem;
+}
+
+.timeline .content .Medie {
+    padding-top: 0.95 rem;
+    color: #666;
+}
+
+.content > h3 + p{
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.pagina {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 6rem;
+    background-color: white;
+    padding: 3rem;
+    max-width: 1000px;
+    margin: auto;
+    min-width: 500px;
+}
+
+table {
+  table-layout: inherit;
+  width: 100%;
+  border-collapse:separate;
+  margin-top: 1rem;
+  padding: 0.5 rem;
+  border: 2px solid rgba(247, 143, 132, 0.53);
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 1.3rem;
+}
+
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+
+nav li a:hover{
+    transition: all 0.3s ease 0s;
+    color: salmon;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
